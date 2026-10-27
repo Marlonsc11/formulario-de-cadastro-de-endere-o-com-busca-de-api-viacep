@@ -1,0 +1,21 @@
+.container-campo-formulario{
+    grid-template-columns: 1fr;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+input[type='submit']{
+    background-color: blue;
+    border-radius: 4px;
+    border-radius: 1px solid blue;
+    color: white;
+    padding: 4px 8px;
+    cursor: pointer;
+    grid-column: 2;
+}
+
+
+.campo-obrigatorio {
+    color: red;
+}

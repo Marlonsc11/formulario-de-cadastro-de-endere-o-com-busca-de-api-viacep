@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+    <main>
+        <div id="container">
+            <h1>Formulário de cadastro</h1>
+            <form>
+                <div class="container-campo-formulario">
+                    <label for="Nome">Nome <span class="campo-obrigatorio">*</span> </label>
+                    <input type="text" class="campo-formulario" name="Nome" id="Nome" required minlength="3">
+                </div>
+
+                <div class="container-campo-formulario">
+                    <label for="Email">Email</label>
+                    <input type="email" class="campo-formulario" name="Email" id="Email" required>
+                </div>
+
+                <div class="container-campo-formulario">
+                    <label for="Senha">Senha</label>
+                    <input type="password" class="campo-formulario" name="Senha" id="Senha">
+                </div>
+
+                <div class="container-campo-formulario">
+                    <label for="Confirmarsenha">Confirmar senha</label>
+                    <input type="password" class="campo-formulario" name="password" id="Senha">
+                </div>
+
+                <div class="container-campo-formulario">
+                    <label for="Rua">Rua</label>
+                    <input type="text" class="campo-formulario" name="Rua" id="Rua">
+                </div>
+
+                <div class="container-campo-formulario">
+                    <label for="Numero">Número</label>
+                    <input type="number" class="campo-formulario" name="Numero" id="Numero">
+                </div>
+
+                <div class="container-campo-formulario">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" class="campo-formulario" name="Bairro" id="Bairro">
+                </div>
+
+                <div class="container-campo-formulario">
+                    <label for="complemento">Complemento</label>
+                    <input type="text" class="campo-formulario" name="complemento" id="complemento">
+                </div>
+                <!-- <button id="btn-enviar">Enviar</button> -->
+                 <input type="submit" id="btn-enviar">
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
