@@ -1,10 +1,10 @@
-const inputCep = document.querySelector("#Cep")
-const inputLogradouro = document.querySelector("#Logradouro")
-const inputComplemento = document.querySelector("#Complemento")
-const inputNumero = document.querySelector("#Numero")
-const inputBairro = document.querySelector("#Bairro")
-const inputCidade = document.querySelector("#Cidade")
-const inputEstado = document.querySelector("#Estado")
+const inputCep = document.querySelector("#cep")
+const inputLogradouro = document.querySelector("#logradouro")
+const inputComplemento = document.querySelector("#complemento")
+const inputNumero = document.querySelector("#numero")
+const inputBairro = document.querySelector("#bairro")
+const inputCidade = document.querySelector("#cidade")
+const inputEstado = document.querySelector("#estado")
 
 const BotaoEnviar = document.querySelector("#btn-enviar")
 
@@ -34,12 +34,13 @@ async function buscarCep(event){
         const response = await fetch(url)
         const json = await response.json(url)
 
-        inputCep.value = json.Cep
-        inputLogradouro.value = json.Logradouro
-        inputComplemento.value = json.Complemento
-        inputNumero.value = json.Número
-        inputBairro.value = json.Bairro
-        inputCidade.value = json.Cidade
-        inputEstado.value = json.Estado
+        console.log(json)
+
+        inputCep.value = json.cep
+        inputLogradouro.value = json.logradouro
+        inputComplemento.value = json.complemento
+        inputBairro.value = json.bairro
+        inputCidade.value = json.localidade
+        inputEstado.value = json.uf
     }
 }
